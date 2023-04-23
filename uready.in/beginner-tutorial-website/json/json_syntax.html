@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<title>JSON Syntax</title>
+
+<!-- Mirrored from vetbossel.in/beginner-tutorial-website/json/json_syntax.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Apr 2023 13:41:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<meta name="description" content="JSON tutorial for Beginners - Learn JSON (Javascript Object Notatation) in simple and easy steps. A beginner's tutorial containing complete knowledge of JSON with its Objects, Schema, comparison, examples etc." />
+<meta name="Keywords" content="JSON, Javascript, Beginners, Object, Schema, DataTypes, Arrays, XML Comparison, Examples." />
+<link rel="SHORTCUT ICON" href="../img/logo.png" />
+<link rel="stylesheet" href="../cs/first.css">
+<link rel="stylesheet" href="../cs/second.css">
+<link rel="stylesheet" href="../cs/w3.css">
+<link rel="stylesheet" href="../cs/w2.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="../cs/third.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "arial", sans-serif}
+.w3-sidenav a,.w3-sidenav h4{padding:12px;}
+.w3-navbar a{padding-top:15px !important;padding-bottom:15px !important;}
+.w3-btn{border-radius:3px;float:left;width:185px;height:55px;margin-left:65px;margin-top:41px;letter-spacing:3px}
+.vetri{margin-left:200px;margin-top:-98.4%}
+</style>
+<body>
+
+<!-- Navbar -->
+<ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;">
+  <li class="w3-opennav w3-right w3-hide-large">
+    <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="../index.html" class="w3-theme-l1">Home</a></li>
+  <li class="w3-hide-small"><a href="../index.html#web_technology" class="w3-hover-white">Web Technology</a></li>
+  <li class="w3-hide-small"><a href="../index.html#projects" class="w3-hover-white">Projects</a></li>
+  <li class="w3-hide-small"><a href="../index.html#technology_updates" class="w3-hover-white">Technology Updates</a></li>
+  <li class="w3-hide-medium w3-hide-small"><a href="../index.html#about_us" class="w3-hover-white">About us</a></li>
+</ul>
+
+<!-- Sidenav -->
+<nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">×</a>
+  <h4><b style="color:blue;letter-spacing:1px">Learn JSON</b></h4>
+  <a href="index.html" class="w3-hover-black"><li>JSON Overview</li></a>
+  <a href="json_introduction.html" class="w3-hover-black"><li>JSON Introduction</li></a>
+  <a href="#" class="w3-hover-black"><li>JSON Syntax</li></a>
+  <a href="json_methods.html" class="w3-hover-black"><li>JSON Methods</li></a>
+  <a href="json_http_request.html" class="w3-hover-black"><li>JSON HTTP Request</li></a>
+  <a href="json_functions.html" class="w3-hover-black"><li>JSON Functions</li></a>
+  <a href="json_objects.html" class="w3-hover-black"><li>JSON Objects</li></a>
+</nav>
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"></div>
+<!--end sidenav-->
+<div class="w3-main" style="margin-left:250px;margin-top:-50px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h1>JSON Syntax</h1>
+	        <p style="margin-top:-10px">The JSON syntax is a subset of the JavaScript syntax.</p>
+			<h2>JSON Syntax Rules</h2>
+			<p style="margin-top:-10px">JSON syntax is derived from JavaScript object notation syntax:</p>
+			<p style="text-indent:20px">1.&nbsp;Data is in name/value pairs.</p>
+			<p style="text-indent:20px">2.&nbsp;Data is separated by commas.</p>
+			<p style="text-indent:20px">3.&nbsp;Curly braces hold objects.</p>
+			<p style="text-indent:20px">4.&nbsp;Square brackets hold arrays.</p>
+			<h2>JSON Data - A Name and a Value</h2>
+			<p style="margin-top:-10px">JSON data is written as name/value pairs.</p>
+			<p style="margin-top:-10px">A name/value pair consists of a field name (in double quotes), followed by a colon, followed by a value:</p>
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown">"firstName":"vetri"</span>,<br>
+<span style="color:brown">"lastName":"pandi"</span>
+</div>
+</div><hr>
+</div>
+</div>
+</div><br>
+<div class="w3-main" style="margin-left:250px;margin-top:-110px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+			<h2>JSON Objects</h2>
+			<p style="margin-top:-10px">JSON objects are written inside curly braces.</p>
+			<p style="margin-top:-10px">Just like JavaScript, JSON objects can contain multiple name/values pairs.</p>
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+{<span style="color:brown">"firstName":"vetri", "lastName":"pandi"</span>}
+</div>
+</div><hr>
+</div>
+</div>
+</div>
+<div class="w3-main" style="margin-left:250px;margin-top:-110px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+			<h2>JSON Arrays</h2>
+			<p style="margin-top:-10px">JSON arrays are written inside square brackets.</p>
+			<p style="margin-top:-10px">Just like JavaScript, a JSON array can contain multiple objects.</p>
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown">"students"</span>:[<br>
+&nbsp;&nbsp;&nbsp;{<span style="color:brown">"Name"</span>:<span style="color:brown">"vetri"</span>, <span style="color:brown">"Grade"</span>:<span style="color:brown">"B"</span>},<br>
+&nbsp;&nbsp;&nbsp;{<span style="color:brown">"Name"</span>:<span style="color:brown">"Boss"</span>, <span style="color:brown">"Grade"</span>:<span style="color:brown">"A"</span>},<br>
+&nbsp;&nbsp;&nbsp;{<span style="color:brown">"Name"</span>:<span style="color:brown">"Selva"</span>, <span style="color:brown">"Grade"</span>:<span style="color:brown">"S"</span>}<br>
+]
+</div>
+</div><hr>
+</div>
+</div>
+</div><br>
+<div class="w3-main" style="margin-left:250px;margin-top:-110px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+			<h2>JSON Uses JavaScript Syntax</h2>
+			<p style="margin-top:-10px">JSON syntax derived from JavaScript object notation.</p>
+			<p style="margin-top:-10px">With JavaScript you can create an array of objects and assign data to it, like this.</p>
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:blue">var</span> employees = [<br>
+&nbsp;&nbsp;&nbsp;{<span style="color:brown">"Name"</span>:<span style="color:brown">"vetri"</span>, <span style="color:brown">"Grade"</span>:<span style="color:brown">"B"</span>},<br>
+&nbsp;&nbsp;&nbsp;{<span style="color:brown">"Name"</span>:<span style="color:brown">"Boss"</span>, <span style="color:brown">"Grade"</span>:<span style="color:brown">"A"</span>},<br>
+&nbsp;&nbsp;&nbsp;{<span style="color:brown">"Name"</span>:<span style="color:brown">"Selva"</span>, <span style="color:brown">"Grade"</span>:<span style="color:brown">"S"</span>}<br>
+];
+</div>
+</div><hr>
+<div class="nav">
+<div class="prev"><a class="chapter" href="json_introduction.html">&laquo; Previous Page</a></div>
+<div class="next"><a class="chapter" href="json_methods.html">Next Page&raquo;</a></div>
+</div><hr>
+</div>
+</div>
+</div>
+<!--end coding box-->
+<script>
+// Script to open and close the sidenav
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "none";
+}
+</script>
+</body>
+
+<!-- Mirrored from vetbossel.in/beginner-tutorial-website/json/json_syntax.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Apr 2023 13:41:31 GMT -->
+</html>

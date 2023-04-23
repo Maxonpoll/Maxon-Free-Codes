@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<title>JSON Tutorial</title>
+
+<!-- Mirrored from vetbossel.in/beginner-tutorial-website/json/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Apr 2023 13:38:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<meta name="description" content="JSON tutorial for Beginners - Learn JSON (Javascript Object Notatation) in simple and easy steps. A beginner's tutorial containing complete knowledge of JSON with its Objects, Schema, comparison, examples etc." />
+<meta name="Keywords" content="JSON, Javascript, Beginners, Object, Schema, DataTypes, Arrays, XML Comparison, Examples." />
+<link rel="SHORTCUT ICON" href="../img/logo.png" />
+<link rel="stylesheet" href="../cs/first.css">
+<link rel="stylesheet" href="../cs/second.css">
+<link rel="stylesheet" href="../cs/w3.css">
+<link rel="stylesheet" href="../cs/w2.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="../cs/third.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "arial", sans-serif}
+.w3-sidenav a,.w3-sidenav h4{padding:12px;}
+.w3-navbar a{padding-top:15px !important;padding-bottom:15px !important;}
+.w3-btn{border-radius:3px;float:left;width:185px;height:55px;margin-left:65px;margin-top:41px;letter-spacing:3px}
+.vetri{margin-left:200px;margin-top:-98.4%}
+</style>
+<body>
+
+<!-- Navbar -->
+<ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;">
+  <li class="w3-opennav w3-right w3-hide-large">
+    <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="../index.html" class="w3-theme-l1">Home</a></li>
+  <li class="w3-hide-small"><a href="../index.html#web_technology" class="w3-hover-white">Web Technology</a></li>
+  <li class="w3-hide-small"><a href="../index.html#projects" class="w3-hover-white">Projects</a></li>
+  <li class="w3-hide-small"><a href="../index.html#technology_updates" class="w3-hover-white">Technology Updates</a></li>
+  <li class="w3-hide-medium w3-hide-small"><a href="../index.html#about_us" class="w3-hover-white">About us</a></li>
+</ul>
+
+<!-- Sidenav -->
+<nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">×</a>
+  <h4><b style="color:blue;letter-spacing:1px">Learn JSON</b></h4>
+  <a href="#" class="w3-hover-black"><li>JSON Overview</li></a>
+  <a href="json_introduction.html" class="w3-hover-black"><li>JSON Introduction</li></a>
+  <a href="json_syntax.html" class="w3-hover-black"><li>JSON Syntax</li></a>
+  <a href="json_methods.html" class="w3-hover-black"><li>JSON Methods</li></a>
+  <a href="json_http_request.html" class="w3-hover-black"><li>JSON HTTP Request</li></a>
+  <a href="json_functions.html" class="w3-hover-black"><li>JSON Functions</li></a>
+  <a href="json_objects.html" class="w3-hover-black"><li>JSON Objects</li></a>
+</nav>
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"></div>
+<div><img src="../img/json.gif" style="margin-left:270px;margin-top:30px;"/></div>
+<!--end sidenav-->
+
+<div class="w3-main" style="margin-left:450px;margin-top:-225px;font-family:'Segoe UI',Arial,sans-serif;font-size:19px;letter-spacing:0.2px">
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <p>JSON - <b>J</b>avascript <b>O</b>bject <b>N</b>otation.</p>
+	  <p>JSON used for storing and exchanging data.</p>
+	  <p>JSON easy to use, alternative for XML.</p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-main" style="margin-left:250px;margin-top:-130px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h1>Overview of JSON</h1>
+	        <p style="margin-top:-10px;text-indent:50px">JSON or JavaScript Object Notation is a lightweight text-based open standard designed for human-readable data interchange. 
+			Conventions used by JSON are known to programmers, which include C, C++, Java, Python, Perl, etc.</p> 
+            <p style="text-indent:50px">It was designed for human-readable data interchange. It has been extended from the JavaScript scripting language.
+			The filename extension is <b>.json</b></p>
+		    <p style="text-indent:50px">It is used while writing JavaScript based applications that includes browser extensions and websites. JSON format is used for serializing and transmitting
+			structured data over network connection. Web services and APIs use JSON format to provide public data.</p>
+			<h2>Characteristics of JSON</h2>
+			<p><li>JSON is easy to read and write.</li></p>
+			<p><li>JSON is lightweight text-based interchange format.</li></p>
+			<p><li>JSON is language independent.</li></p>
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<h3>JSON</h3>
+<div class="w3-code notranslate htmlHigh">
+{<span style="color:brown">"students"</span>:[<br>
+&nbsp;&nbsp;&nbsp;{<span style="color:brown">"Name"</span>:<span style="color:brown">"vetri"</span>, <span style="color:brown">"Grade"</span>:<span style="color:brown">"B"</span>},<br>
+&nbsp;&nbsp;&nbsp;{<span style="color:brown">"Name"</span>:<span style="color:brown">"Boss"</span>, <span style="color:brown">"Grade"</span>:<span style="color:brown">"A"</span>},<br>
+&nbsp;&nbsp;&nbsp;{<span style="color:brown">"Name"</span>:<span style="color:brown">"Selva"</span>, <span style="color:brown">"Grade"</span>:<span style="color:brown">"S"</span>}<br>
+]}
+</div>
+</div><hr>
+</div>
+</div>
+</div><br><br>
+
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<h3>XML</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;<span style="color:brown">students</span>&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;<span style="color:brown">student</span>&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span style="color:brown">Name</span>&gt;Vetri&lt;<span style="color:brown">/Name</span>&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span style="color:brown">Grade</span>&gt;B&lt;<span style="color:brown">/Grade</span>&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;<span style="color:brown">/student</span>&gt;<br><br>
+&nbsp;&nbsp;&nbsp;&lt;<span style="color:brown">student</span>&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span style="color:brown">Name</span>&gt;Boss&lt;<span style="color:brown">/Name</span>&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span style="color:brown">Grade</span>&gt;A&lt;<span style="color:brown">/Grade</span>&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;<span style="color:brown">/student</span>&gt;<br><br>
+&nbsp;&nbsp;&nbsp;&lt;<span style="color:brown">student</span>&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span style="color:brown">Name</span>&gt;Selva&lt;<span style="color:brown">/Name</span>&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span style="color:brown">Grade</span>&gt;S&lt;<span style="color:brown">/Grade</span>&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;<span style="color:brown">/student</span>&gt;<br>
+&lt;<span style="color:brown">/students</span>&gt;
+</div>
+</div><hr>
+<div class="nav">
+<div class="next"><a class="chapter" href="json_introduction.html">Next Page&raquo;</a></div>
+</div>
+</div>
+</div>
+</div>
+
+<!--end coding box-->
+<script>
+// Script to open and close the sidenav
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "none";
+}
+</script>
+</body>
+
+<!-- Mirrored from vetbossel.in/beginner-tutorial-website/json/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Apr 2023 13:38:32 GMT -->
+</html>

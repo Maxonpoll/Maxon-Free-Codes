@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<title>JSON Objects</title>
+
+<!-- Mirrored from vetbossel.in/beginner-tutorial-website/json/json_objects.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Apr 2023 13:41:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<meta name="description" content="JSON tutorial for Beginners - Learn JSON (Javascript Object Notatation) in simple and easy steps. A beginner's tutorial containing complete knowledge of JSON with its Objects, Schema, comparison, examples etc." />
+<meta name="Keywords" content="JSON, Javascript, Beginners, Object, Schema, DataTypes, Arrays, XML Comparison, Examples." />
+<link rel="SHORTCUT ICON" href="../img/logo.png" />
+<link rel="stylesheet" href="../cs/first.css">
+<link rel="stylesheet" href="../cs/second.css">
+<link rel="stylesheet" href="../cs/w3.css">
+<link rel="stylesheet" href="../cs/w2.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="../cs/third.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "arial", sans-serif}
+.w3-sidenav a,.w3-sidenav h4{padding:12px;}
+.w3-navbar a{padding-top:15px !important;padding-bottom:15px !important;}
+.w3-btn{border-radius:3px;float:left;width:185px;height:55px;margin-left:65px;margin-top:41px;letter-spacing:3px}
+.vetri{margin-left:200px;margin-top:-98.4%}
+</style>
+<body>
+
+<!-- Navbar -->
+<ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;">
+  <li class="w3-opennav w3-right w3-hide-large">
+    <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="../index.html" class="w3-theme-l1">Home</a></li>
+  <li class="w3-hide-small"><a href="../index.html#web_technology" class="w3-hover-white">Web Technology</a></li>
+  <li class="w3-hide-small"><a href="../index.html#projects" class="w3-hover-white">Projects</a></li>
+  <li class="w3-hide-small"><a href="../index.html#technology_updates" class="w3-hover-white">Technology Updates</a></li>
+  <li class="w3-hide-medium w3-hide-small"><a href="../index.html#about_us" class="w3-hover-white">About us</a></li>
+</ul>
+
+<!-- Sidenav -->
+<nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">×</a>
+  <h4><b style="color:blue;letter-spacing:1px">Learn JSON</b></h4>
+  <a href="index.html" class="w3-hover-black"><li>JSON Overview</li></a>
+  <a href="json_introduction.html" class="w3-hover-black"><li>JSON Introduction</li></a>
+  <a href="json_syntax.html" class="w3-hover-black"><li>JSON Syntax</li></a>
+  <a href="json_methods.html" class="w3-hover-black"><li>JSON Methods</li></a>
+  <a href="json_http_request.html" class="w3-hover-black"><li>JSON HTTP Request</li></a>
+  <a href="json_functions.html" class="w3-hover-black"><li>JSON Functions</li></a>
+  <a href="#" class="w3-hover-black"><li>JSON Objects</li></a>
+</nav>
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"></div>
+<!--end sidenav-->
+<div class="w3-main" style="margin-left:250px;margin-top:-50px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h1>JSON Objects</h1>
+	        <p style="margin-top:-10px">JSON objects can be created with JavaScript.</p>
+			<p><b>Create empty Object</b></p>
+			<p style="margin-top:-10px;color:brown">var JSONObj = {};</p>
+			<p><b>Create new Object</b></p>
+			<p style="margin-top:-10px;color:brown">var JSONObj = new Object();</p>
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;<span style="color:brown">!DOCTYPE</span> <span style="color:red">html</span>&gt;<br>
+&lt;<span style="color:brown">html</span>&gt;<br>
+&lt;<span style="color:brown">body</span>&gt;<br><br>
+&lt;<span style="color:brown">script</span>&gt;<br>
+<span style="color:blue">var</span> JSONObj = { <span style="color:brown">"name" : "vetripandi", "age"  : 21</span> };<br>
+document.write(<span style="color:brown">"&lt;h1&gt;JSON with JavaScript example&lt;/h1&gt;"</span>);<br>
+document.write(<span style="color:brown">"&lt;br&gt;"</span>);<br>
+document.write(<span style="color:brown">"&lt;h3&gt;First Name = "+JSONObj.name+"&lt;/h3&gt;"</span>);<br>
+document.write(<span style="color:brown">"&lt;h3&gt;Age = "+JSONObj.age+"&lt;/h3&gt;"</span>);<br>
+&lt;<span style="color:brown">/script</span>&gt;<br><br>
+&lt;<span style="color:brown">/body</span>&gt;<br>
+&lt;<span style="color:brown">/html</span>&gt;
+</div>
+<a target="_blank" class="w3-jo w3-margin-bottom" href="tryit/four.html">Run the file &raquo;</a>
+</div><hr>
+<div class="nav">
+<div class="prev"><a class="chapter" href="json_http_request.html">&laquo; Previous Page</a></div>
+</div><hr>
+</div>
+</div>
+</div><br>
+<!--end coding box-->
+<script>
+// Script to open and close the sidenav
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "none";
+}
+</script>
+</body>
+
+<!-- Mirrored from vetbossel.in/beginner-tutorial-website/json/json_objects.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Apr 2023 13:41:33 GMT -->
+</html>

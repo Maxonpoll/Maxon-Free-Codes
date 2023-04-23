@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<title>HTML Forms</title>
+
+<!-- Mirrored from vetbossel.in/beginner-tutorial-website/html/html_forms.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Apr 2023 13:40:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<meta name="description" content="HTML Tutorial for beginners - Learn HTML to develop  your website in simple and easy steps starting from its overview, basic tags, meta tags, attributes, formatting, phrase tags, comments, fonts, marquees, images, links, tables, frames, lists, layouts, colors, forms, backgrounds, style sheet, and javascript." />
+<meta name="keywords" content="HTML, Tutorial, beginners, develop, website, simple, easy, steps, starting, overview, basic tags, meta tags, attributes, formatting, phrase tags, comments, fonts, marquees, images, links, tables, frames, lists, layouts, colors, forms, backgrounds, style sheet, and javascript." />
+<link rel="SHORTCUT ICON" href="../img/logo.png" />
+<link rel="stylesheet" href="../cs/first.css">
+<link rel="stylesheet" href="../cs/second.css">
+<link rel="stylesheet" href="../cs/w3.css">
+<link rel="stylesheet" href="../cs/w2.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="../cs/third.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "arial", sans-serif}
+.w3-sidenav a,.w3-sidenav h4{padding:12px;}
+.w3-navbar a{padding-top:15px !important;padding-bottom:15px !important;}
+.w3-btn{border-radius:3px;float:left;width:185px;height:55px;margin-left:65px;margin-top:41px;letter-spacing:3px}
+.vetri{margin-left:200px;margin-top:-98.4%}
+</style>
+<body>
+
+<!-- Navbar -->
+<ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;">
+  <li class="w3-opennav w3-right w3-hide-large">
+    <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="../index.html" class="w3-theme-l1">Home</a></li>
+  <li class="w3-hide-small"><a href="../index.html#web_technology" class="w3-hover-white">Web Technology</a></li>
+  <li class="w3-hide-small"><a href="../index.html#projects" class="w3-hover-white">Projects</a></li>
+  <li class="w3-hide-small"><a href="../index.html#technology_updates" class="w3-hover-white">Technology Updates</a></li>
+  <li class="w3-hide-medium w3-hide-small"><a href="../index.html#about_us" class="w3-hover-white">About us</a></li>
+</ul>
+
+<!-- Sidenav -->
+<nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">×</a>
+  <h4><b style="color:blue;letter-spacing:1px">Learn HTML</b></h4>
+  <a href="index.html" class="w3-hover-black"><li>HTML Overview</li></a>
+  <a href="html_introduction.html" class="w3-hover-black"><li>HTML Introduction</li></a>
+  <a href="html_attributes.html" class="w3-hover-black"><li>HTML Attributes</li></a>
+  <a href="html_formatting.html" class="w3-hover-black"><li>HTML Formatting</li></a>
+  <a href="html_elements.html" class="w3-hover-black"><li>HTML Elements</li></a>
+  <a href="html_heading.html" class="w3-hover-black"><li>HTML Headings</li></a>
+  <a href="html_paragraph.html" class="w3-hover-black"><li>HTML Paragraphs</li></a>
+  <a href="html_styles.html" class="w3-hover-black"><li>HTML Styles</li></a>
+  <a href="html_comments.html" class="w3-hover-black"><li>HTML comments</li></a>
+  <a href="html_colors.html" class="w3-hover-black"><li>HTML Colors</li></a>
+  <a href="html_css.html" class="w3-hover-black"><li>HTML CSS</li></a>
+  <a href="html_javascript.html" class="w3-hover-black"><li>HTML JavaScript</li></a>
+  <a href="html_links.html" class="w3-hover-black"><li>HTML Links</li></a>
+  <a href="html_lists.html" class="w3-hover-black"><li>HTML Lists</li></a>
+  <a href="html_images.html" class="w3-hover-black"><li>HTML Images</li></a>
+  <a href="html_tables.html" class="w3-hover-black"><li>HTML Tables</li></a>
+  <a href="html_responsive.html" class="w3-hover-black"><li>HTML Responsive</li></a>
+  <a href="html_iframes.html" class="w3-hover-black"><li>HTML Iframes</li></a>
+  <a href="#" class="w3-hover-black"><li>HTML Forms</li></a>
+</nav>
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"></div>
+
+<div class="w3-main" style="margin-left:250px;margin-top:-50px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h1>HTML Forms</h1>
+	        <p style="margin-top:-10px">HTML forms are used to collect user input.</p>
+            <p>The &lt;form&gt; element defines an HTML form.</p>
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<div class="w3-code notranslate htmlHigh">
+&lt;form&gt;<br>
+&nbsp;&nbsp;do some here<br>
+&lt;/form&gt;
+</div>
+</div><hr>
+</div>
+</div>
+</div>
+<div class="w3-main" style="margin-left:250px;margin-top:-110px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h2>Text Input</h2>
+	        <p style="margin-top:-10px">&lt;input type="text"&gt; defines a one-line input field for text input.</p>
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;form&gt;<br>
+&nbsp;&nbsp;&nbsp;First name:&lt;br&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;input type="text" name="firstname"&gt;&lt;br&gt;<br>
+&nbsp;&nbsp;&nbsp;Last name:&lt;br&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;input type="text" name="lastname"&gt;&lt;br&gt;<br>
+&lt;/form&gt;
+</div>
+<a target="_blank" class="w3-jo w3-margin-bottom" href="tryit/fourtyfour.html">Run the file &raquo;</a>
+</div><hr>
+</div>
+</div>
+</div>
+<div class="w3-main" style="margin-left:250px;margin-top:-110px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h2>Radio Button Input</h2>
+	        <p style="margin-top:-10px">&lt;input type="radio"&gt; defines a radio button.</p>
+			<p>Radio buttons let a user select ONE of a limited number of choices.</p>
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;form&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;input type="radio" name="gender" value="male" checked&gt;Male&lt;br&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;input type="radio" name="gender" value="female"&gt;Female&lt;br&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;input type="radio" name="gender" value="other"&gt;Other&lt;br&gt;<br>
+&lt;/form&gt;
+</div>
+<a target="_blank" class="w3-jo w3-margin-bottom" href="tryit/fourtyfive.html">Run the file &raquo;</a>
+</div><hr>
+</div>
+</div>
+</div>
+<div class="w3-main" style="margin-left:250px;margin-top:-110px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h2>The Submit Button</h2>
+	        <p style="margin-top:-10px">&lt;input type="submit"&gt; defines a button for submitting a form to a form-handler.</p>
+			<p>The form-handler is typically a server page with a script for processing input data.</p>
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;form action="demo.php"&gt;<br>
+&nbsp;&nbsp;&nbsp;First name:&lt;br&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;input type="text" name="firstname" value="vetri"&gt;&lt;br&gt;<br>
+&nbsp;&nbsp;&nbsp;Last name:&lt;br&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;input type="text" name="lastname" value="pandi"&gt;&lt;br&gt;<br>
+&lt;/form&gt;
+</div>
+<a target="_blank" class="w3-jo w3-margin-bottom" href="tryit/fourtysix.html">Run the file &raquo;</a>
+</div><hr>
+<div class="nav">
+<div class="prev"><a class="chapter" href="html_iframes.html">&laquo; Previous Page</a></div>
+</div><hr>
+</div>
+</div>
+</div><br>
+<script>
+// Script to open and close the sidenav
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "none";
+}
+</script>
+</body>
+
+<!-- Mirrored from vetbossel.in/beginner-tutorial-website/html/html_forms.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Apr 2023 13:40:27 GMT -->
+</html>

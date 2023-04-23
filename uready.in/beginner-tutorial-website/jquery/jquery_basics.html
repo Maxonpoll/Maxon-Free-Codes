@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<title>jQuery Basics</title>
+
+<!-- Mirrored from vetbossel.in/beginner-tutorial-website/jquery/jquery_basics.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Apr 2023 13:41:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<meta name="description" content="jQuery Tutorial for Beginners - Learning JavaScript Framework in simple and easy steps. A beginner's tutorial containing complete knowledge of jQuery Selectors, Attributes, CSS, DOM Manipulation, AJAX Support, Drag and Drop, Effects, Event Handling, UI, Plug-ins and other related Utilities." />
+<meta name="Keywords" content="jQuery, JavaScript, Tutorials, Learning, Beginners, Basics, Scripting Language, Functions, Objects, DOM, AJAX, Drag, Drop, Effects, Events, Selectors." />
+<link rel="SHORTCUT ICON" href="../img/logo.png" />
+<link rel="stylesheet" href="../cs/first.css">
+<link rel="stylesheet" href="../cs/second.css">
+<link rel="stylesheet" href="../cs/w3.css">
+<link rel="stylesheet" href="../cs/w2.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="../cs/third.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "arial", sans-serif}
+.w3-sidenav a,.w3-sidenav h4{padding:12px;}
+.w3-navbar a{padding-top:15px !important;padding-bottom:15px !important;}
+.w3-btn{border-radius:3px;float:left;width:185px;height:55px;margin-left:65px;margin-top:41px;letter-spacing:3px}
+.vetri{margin-left:200px;margin-top:-98.4%}
+</style>
+<body>
+
+<!-- Navbar -->
+<ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;">
+  <li class="w3-opennav w3-right w3-hide-large">
+    <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="../index.html" class="w3-theme-l1">Home</a></li>
+  <li class="w3-hide-small"><a href="../index.html#web_technology" class="w3-hover-white">Web Technology</a></li>
+  <li class="w3-hide-small"><a href="../index.html#projects" class="w3-hover-white">Projects</a></li>
+  <li class="w3-hide-small"><a href="../index.html#technology_updates" class="w3-hover-white">Technology Updates</a></li>
+  <li class="w3-hide-medium w3-hide-small"><a href="../index.html#about_us" class="w3-hover-white">About us</a></li>
+</ul>
+
+<!-- Sidenav -->
+<nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">×</a>
+  <h4><b style="color:blue;letter-spacing:1px">Learn jQuery</b></h4>
+  <a href="index.html" class="w3-hover-black"><li>jQuery Overview</li></a>
+  <a href="jquery_introduction.html" class="w3-hover-black"><li>jQuery Introduction</li></a>
+  <a href="#" class="w3-hover-black"><li>jQuery Basics</li></a>
+  <a href="jquery_syntax.html" class="w3-hover-black"><li>jQuery Syntax</li></a>
+  <a href="jquery_selectors.html" class="w3-hover-black"><li>jQuery Selectors</li></a>
+  <a href="jquery_events.html" class="w3-hover-black"><li>jQuery Events</li></a>
+  <a href="jquery_animation.html" class="w3-hover-black"><li>jQuery Animation</li></a>
+  <a href="jquery_hide_show.html" class="w3-hover-black"><li>jQuery Hide/Show</li></a>
+  <a href="jquery_fade.html" class="w3-hover-black"><li>jQuery Fade</li></a>
+  <a href="jquery_slide.html" class="w3-hover-black"><li>jQuery Slide</li></a>
+  <a href="jquery_chaining.html" class="w3-hover-black"><li>jQuery Chaining</li></a>
+  <a href="jquery_callback.html" class="w3-hover-black"><li>jQuery Callback</li></a>
+  <a href="jquery_stop.html" class="w3-hover-black"><li>jQuery Stop</li></a>
+</nav>
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"></div>
+<!--end sidenav-->
+
+<div class="w3-main" style="margin-left:250px;margin-top:-50px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h1>jQuery Basics</h1>
+	        <p style="text-indent:50px;margin-top:-10px">jQuery is a framework built using JavaScript capabilities. So while developing your applications using jQuery, 
+			you can use all the functions and other capabilities available in JavaScript.</p>
+			<h2>String</h2>
+			<p style="margin-top:-10px">A string in JavaScript is an immutable object that contains none, one or many characters.</p>
+		</div>
+    </div>
+</div>
+
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<div class="w3-code notranslate htmlHigh">
+"This is JavaScript String"<br>
+'This is JavaScript String'<br> 
+'This is "really" a JavaScript String'<br>
+"This is 'really' a JavaScript String"
+</div>
+</div><hr>
+</div>
+</div>
+</div><br>
+<div class="w3-main" style="margin-left:250px;margin-top:-110px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+			<h2>Numbers</h2>
+			<p style="margin-top:-10px">Numbers in JavaScript are double-precision 64-bit format IEEE 754 values. They are immutable, just as strings.</p>
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<div class="w3-code notranslate htmlHigh">
+365902<br>
+10.548<br> 
+05.60
+</div>
+</div><hr>
+</div>
+</div>
+</div><br>
+<div class="w3-main" style="margin-left:250px;margin-top:-110px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+			<h2>Boolean</h2>
+			<p style="margin-top:-10px">A boolean in JavaScript can be either true or false. If a number is zero, it defaults to false. 
+			If an empty string defaults to false.</p>
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<div class="w3-code notranslate htmlHigh">
+true &nbsp;&nbsp;&nbsp;<span style="color:brown">//true</span><br>
+false &nbsp;<span style="color:brown">//false</span><br> 
+0 &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:brown">//false</span><br>
+1 &nbsp;&nbsp;&nbsp;<span style="color:brown">//true</span><br>
+"vetri" &nbsp;&nbsp;<span style="color:brown">//true</span>
+</div>
+</div><hr>
+</div>
+</div>
+</div><br>
+<div class="w3-main" style="margin-left:250px;margin-top:-110px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+			<h2>Objects</h2>
+			<p style="margin-top:-10px">JavaScript supports Object concept very well. You can create an object using the object literal as follows.</p>
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<div class="w3-code notranslate htmlHigh">
+var student = {<br>
+&nbsp;&nbsp;&nbsp;name: "vetripandi",<br> 
+&nbsp;&nbsp;&nbsp;age: 22<br> 
+};
+</div>
+</div><hr>
+</div>
+</div>
+</div><br>
+<div class="w3-main" style="margin-left:250px;margin-top:-110px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+			<h2>Arrays</h2>
+			<p style="margin-top:-10px">You can define arrays using the array literal as follows.</p>
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<div class="w3-code notranslate htmlHigh">
+var x = [];<br>
+var y = [1, 2, 3, 4, 5];
+</div>
+</div><hr>
+</div>
+</div>
+</div><br>
+<div class="w3-main" style="margin-left:250px;margin-top:-110px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+			<h2>Functions</h2>
+			<p style="margin-top:-10px">A function in JavaScript can be either named or anonymous. A named function can be defined using function keyword as follows</p>
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<div class="w3-code notranslate htmlHigh">
+function named(){<br>
+// do some stuff here<br>
+}
+</div>
+</div><hr>
+<div class="nav">
+<div class="prev"><a class="chapter" href="jquery_introduction.html">&laquo; Previous Page</a></div>
+<div class="next"><a class="chapter" href="jquery_syntax.html">Next Page&raquo;</a></div>
+</div><hr>
+</div>
+</div>
+</div>
+<script>
+// Script to open and close the sidenav
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "none";
+}
+</script>
+</body>
+
+<!-- Mirrored from vetbossel.in/beginner-tutorial-website/jquery/jquery_basics.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Apr 2023 13:41:22 GMT -->
+</html>
